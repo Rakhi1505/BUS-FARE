@@ -1,0 +1,53 @@
+<html>
+
+<head>
+
+    <title>ROCK PAPER SCISSOR</title>
+</head>
+<h1>
+   <link rel="stylesheet" href="rock_paper_scissor.css">
+   <h2> HEY!! THERE LETS'S PLAY AN INTERESTING GAME OF "ROCK PAPER SCISSOR"</h2>
+    <br>
+    <br>
+    
+    <h3>CHOOSE ONE OF THE GIVEN OPTIONS</h3>
+  <br>  
+  <br>
+  <br>
+
+<button id="c1" onclick=" alert('YOU CHOSE ROCK');let c=extra();document.write('YOUR CHOICE IS ROCK <br> COMPUTER CHOICE IS '+c+'<br>');if(c=='ROCK')document.write('IT IS A TIE');
+else if(c=='PAPER')document.write('YOU WON');
+else document.write('YOU LOST');"> ROCK</button>
+<br>
+<br>
+<br>
+
+<button id="c2" onclick=" alert('YOU CHOSE PAPER ');let c =extra();document.write('YOUR CHOICEE IS PAPER  <br> COMPUTER CHOICE IS '+c+'<br>');if(c=='PAPER')document.write('');
+else if(c=='ROCK')document.write('YOU WON');
+else document.write('YOU LOST');">PAPER</button>
+ <br>
+ <br>
+ <br><button id="c3" onclick=" alert('YOU CHOSE SCISSOR ');let c=extra();document.write('YOUR CHOICE IS SCISSOR  <br> COMPUTER CHOICE IS '+c+'<br>');if(c=='SCISSOR')document.write('IT IS A TIE');
+else if(c=='PAPER')document.write('YOU WON');
+else document.write('YOU LOST');">SCISSOR</button>   
+
+<script>
+ function extra()
+ { 
+  let r=Math.random()*3;if(r>=0 && r<1)
+  {
+    return 'ROCK';
+    }
+    else if(r<2&&r>=1)
+    {
+      return 'PAPER';
+      }
+      else
+      {
+        return'SCISSOR';
+        }
+        
+        }
+</script>
+</body>
+</html>

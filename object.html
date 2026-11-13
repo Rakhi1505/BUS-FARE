@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let user = {nameuser:'RAKHI',
+        age:18,
+        course:'B.E',
+
+    };
+    let z=user.course;
+
+    console.log(z);
+    console.log(typeof user);
+    console.log(user);
+    delete user.age;
+    console.log(user);
+    //object inside object:
+     let use ={name:'rakhi k',
+     age:18,
+     otherdetail:function(){console.log(use.name);}
+
+
+};
+use.otherdetail();
+let ra={name:'rakhi'};
+
+     let ka=ra;
+     console.log(ra.name);
+     console.log(ka.name);
+     //if value is coming from outside the object
+     
+let name='kusum';
+     let rakhi={age:18,
+        dadi_name:name};
+        let {dadi_name}=rakhi;
+        console.log(dadi_name);
+        //
+        let na='RAKHI';
+        let ma={na,age:18};
+        console.log(ma.na);
+     
+</script>
+</html>

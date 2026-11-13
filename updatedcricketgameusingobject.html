@@ -1,0 +1,98 @@
+<html>
+
+
+
+    <head>
+
+    <title>cricket game </title>
+</head>
+<body style="text-align:center";>
+        <link rel="stylesheet" href="cricketgame.css">
+   <h1 id="text"> BAT BALL AND STUMP GAME</h1>
+    DEAR PLAYER PLEASE MAKE YOUR CHOICE
+    <br>
+    <br>
+
+    <button  id="c1" onclick="document.write('YOU CHOSE BAT\n ');document.write('<br>');extra(); 
+
+ if(computerchoice=='BALL'){document.write('WOO!! YOU WON\n');score.win++;   console.log(score);document.write('<br>');}
+else if(computerchoice=='BAT'){document.write('IT IS A TIE\n');score.tie++;   console.log(score);document.write('<br>');}
+ else{document.write('OOPS!! YOU LOST\n');score.loss++;   console.log(score);document.write('<br>');}">BAT</button>
+   
+   
+   
+   
+   
+  
+  
+  
+  
+  
+  
+  <button id="c2" onclick=" document.write('YOU CHOSE BALL\n'); document.write('<br>');extra(); 
+
+if(computerchoice=='BALL'){document.write('IT IS A TIE\n');score.tie++;   console.log(score);document.write('<br>');}
+else if(computerchoice=='BAT'){document.write(' OOPS!! YOU LOST  !!\n');score.loss++;   ;console.log(score);document.write('<br>');}
+ else{document.write('WOO !! YOU WON\n');score.win++;   console.log(score);document.write('<br>');}" >BALL</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button  id="c3" onclick=" document.write(' YOU CHOSE STUMP\n ');document.write('<br>');extra();
+
+ if(computerchoice=='STUMP'){document.write('IT IS A TIE\n');score.tie++;   console.log(score);document.write('<br>');}
+else if(computerchoice=='BAT'){document.write('YOU WON  !!\n');score.win++;   console.log(score);document.write('<br>');} 
+else{document.write('OOPS!! YOU LOST\n');score.loss++;   console.log(score);document.write('<br>');}">STUMP</button>
+<br>
+<br>
+   
+<script>
+let score={win:0,//globally declared therefore if value changed anywhere then it would be changed everywhere and then will be stored
+    loss:0,
+    tie:0,
+};
+
+
+
+
+
+    let computerchoice=" ";
+    function extra(){let r =Math.random() * 3;
+if(r> 0 && r <= 1){ computerchoice='BAT';document.write('COMPUTER CHOICE IS BAT\n');document.write('<br>');}
+else if(r> 1 && r <= 2){ computerchoice='BALL';document.write('COMPUTER CHOICE IS BALL\n');document.write('<br>');}
+else { computerchoice='STUMP';document.write('COMPUTER CHOICE IS STUMP\n');document.write('<br>');}
+    }
+
+
+
+
+   /* IF YOU HAVE ALREADY DECLARED A GLOBAL VARIABLE NEVER EVER DECLARE IT AGAIN ANYHERE WHETHER
+    IT IS INSIDE ANY FUNCTION OR NOT
+   OTHERWISE IF I DECLARE IT AGAIN IT WOULD BE SEEN AS OTHER/NEW  LOCAL VARIABLE NOT THE SAME
+    GLOBAL VARIABLE WHICH WE DECLARED INITIALLY EVEN THOUGH THEY MAY HAVE SAME NAME. 
+    */
+   console.log(score);
+</script>
+
+    
+    
+
+
+
+
+
+
+
+
+
+</body>
+</html>
